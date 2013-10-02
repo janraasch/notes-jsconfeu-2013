@@ -1,12 +1,13 @@
 /**
- * Based on the Black theme for reveal.js
- * by Hakim El Hattab, http://hakim.se
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@import "../../bower_components/reveal.js/css/theme/template/mixins";
+@import "../../bower_components/reveal.js/css/theme/template/settings";
 // ---------------------------------------------
 
 
@@ -19,16 +20,16 @@
 $backgroundColor: #111;
 
 $mainFont: 'Open Sans', sans-serif;
-$linkColor: #e7ad52;
+$linkColor: #ed1dff;
 $linkColorHover: lighten( $linkColor, 20% );
 $headingFont: 'Montserrat', Impact, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: -0.03em;
 $headingTextTransform: none;
-$selectionBackgroundColor: #e7ad52;
+$selectionBackgroundColor: #e0ad52;
 $mainFontSize: 30px;
 
 
 // Theme template ------------------------------
-@import "../template/theme";
+@import "../../bower_components/reveal.js/css/theme/template/theme";
 // ---------------------------------------------

@@ -7,18 +7,21 @@ module.exports = (grunt) ->
     grunt.initConfig
 
         watch:
+
             options:
                 spawn: false
 
             livereload:
                 options:
                     livereload: yeomanConfig.livereloadPort
-                files: ['index.html', 'notes.md']
+                files: ['index.html', 'notes.md', 'css/source/theme.scss']
+                tasks: ['sass']
 
             coffeelint:
                 files: ['Gruntfile.coffee']
 
         connect:
+
             livereload:
                 options:
                     # port: 9000
@@ -36,14 +39,27 @@ module.exports = (grunt) ->
                             connect.static(options.base)
                         ]
 
+        sass:
+
+            theme:
+                files:
+                    'css/theme.css': 'css/source/theme.scss'
+
         coffeelint:
+
             options:
                 indentation:
                     value: 4
+
             src: ['Gruntfile.coffee']
 
     # Load all grunt tasks.
     require('load-grunt-tasks')(grunt)
 
     # Define default task.
-    grunt.registerTask('default', ['coffeelint', 'connect:livereload', 'watch'])
+    grunt.registerTask('default', [
+        'coffeelint',
+        'sass',
+        'connect:livereload',
+        'watch'
+    ])
