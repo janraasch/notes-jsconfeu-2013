@@ -21,7 +21,7 @@ $backgroundColor: #111;
 
 $mainFont: 'Open Sans', sans-serif;
 $linkColor: #ed1dff;
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColorHover: $linkColor;
 $headingFont: 'Montserrat', Impact, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: -0.03em;
@@ -37,3 +37,11 @@ $mainFontSize: 30px;
 .reveal blockquote {
     background: rgba(255, 255, 255, 0.25);
 }
+
+// Overwrite some zenburn styles ------------
+pre {
+    .keyword, .comment {
+        color: #3ACF5E;
+    }
+}
+// ------------------------------------------

@@ -57,7 +57,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #f583ff;
+  color: #ed1dff;
   text-shadow: none;
   border: none; }
 
@@ -104,16 +104,16 @@ body {
   border-top-color: #ed1dff; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #f583ff; }
+  border-right-color: #ed1dff; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #f583ff; }
+  border-left-color: #ed1dff; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #f583ff; }
+  border-bottom-color: #ed1dff; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #f583ff; }
+  border-top-color: #ed1dff; }
 
 /*********************************************
  * PROGRESS BAR
@@ -131,3 +131,6 @@ body {
 
 .reveal blockquote {
   background: rgba(255, 255, 255, 0.25); }
+
+pre .keyword, pre .comment {
+  color: #3ACF5E; }
