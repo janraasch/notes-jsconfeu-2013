@@ -33,3 +33,7 @@ $mainFontSize: 30px;
 // Theme template ------------------------------
 @import "../../bower_components/reveal.js/css/theme/template/theme";
 // ---------------------------------------------
+
+.reveal blockquote {
+    background: rgba(255, 255, 255, 0.25);
+}
