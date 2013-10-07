@@ -1,9 +1,5 @@
 module.exports = (grunt) ->
 
-    # Configuration.
-    yeomanConfig =
-        livereloadPort: 35729 # Recommended standard.
-
     grunt.initConfig
 
         watch:
@@ -13,7 +9,7 @@ module.exports = (grunt) ->
 
             livereload:
                 options:
-                    livereload: yeomanConfig.livereloadPort
+                    livereload: true
                 files: ['index.html', 'notes.md', 'css/source/theme.scss']
                 tasks: ['sass']
 
@@ -28,16 +24,9 @@ module.exports = (grunt) ->
                     # Change hostname to '0.0.0.0' to access
                     # the server from outside.
                     # hostname: '0.0.0.0',
-                    base: require('path').resolve('.')
+                    base: '.'
                     open: true
-                    middleware: (connect, options) ->
-                        [
-                            # Add livereload middleware.
-                            require('connect-livereload')(
-                                port: yeomanConfig.livereloadPort
-                            ),
-                            connect.static(options.base)
-                        ]
+                    livereload: true
 
         sass:
 
