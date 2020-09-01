@@ -6,7 +6,7 @@ My notes from jsconf.eu 2013.
 GitHub Pages
 --------------
 
-Go to the [GitHub Page](http://jraasch.github.io/notes-jsconfeu-2013/) of this repository to view the slides online.
+Go to the [GitHub Page](http://janraasch.github.io/notes-jsconfeu-2013/) of this repository to view the slides online.
 
 
 Local Version
